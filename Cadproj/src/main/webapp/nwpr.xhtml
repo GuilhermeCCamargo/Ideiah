@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <table  widht="100%">
+                            <h:form>
+                                      
+                                            <label for="nome_projeto" >Nome do projeto : </label>
+                                            <h:inputText id="nome_projeto" /><br/><wbr/>
+                                       
+                                        
+                                            <label for="data_inicio" >Data de início : </label>
+                                            <input type ="text" id="data_inicio" align="right"></input>
+                                      
+                                        <p>
+                                            <label for="data_fim" >Data de término : </label>
+                                            <input type ="text" align="right" id="data_fim" ></input>
+                                        </p>
+                                      
+                                            
+                                             
+                                             
+                                            <label for="status_projeto">Indique o status do projeto : </label>
+                                            <input type ="checkbox" align="right" name="status_concluido" value="Concluído" ><p>Concluído</p></input>
+                                            <input type ="checkbox" align="right" name="status_executando" value="Em Andamento" >Em Andamento</input>
+                                            <input type ="checkbox" align="right" name="status_parado" value="Parado" >Parado</input>
+                                            <input type ="checkbox" align="right" name="status_cancelado" value="Cancelado" >Cancelado</input>
+                                     
+                                
+                            </h:form>
+                 </table>
+    </h:body>
+</html>
+
