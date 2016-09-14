@@ -1,0 +1,21 @@
+
+
+
+body {
+    background-color: rgb(157, 174, 172);
+}
+
+Img {
+   border: 2px solid black;
+  padding: 1px;
+}
+
+div.static {
+
+ font-family: "Times New Roman";
+
+	border-radius: 25px;
+    text-align: center;
+    position: static;
+    border: 3px solid #DCDCDC;
+}
