@@ -1,38 +1,99 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Projetos</title>
     </h:head>
     <h:body>
-        <table  widht="100%">
-                            <h:form>
-                                      
-                                            <label for="nome_projeto" >Nome do projeto : </label>
-                                            <h:inputText id="nome_projeto" /><br/><wbr/>
-                                       
-                                        
-                                            <label for="data_inicio" >Data de início : </label>
-                                            <input type ="text" id="data_inicio" align="right"></input>
-                                      
-                                        <p>
-                                            <label for="data_fim" >Data de término : </label>
-                                            <input type ="text" align="right" id="data_fim" ></input>
-                                        </p>
-                                      
-                                            
-                                             
-                                             
-                                            <label for="status_projeto">Indique o status do projeto : </label>
-                                            <input type ="checkbox" align="right" name="status_concluido" value="Concluído" ><p>Concluído</p></input>
-                                            <input type ="checkbox" align="right" name="status_executando" value="Em Andamento" >Em Andamento</input>
-                                            <input type ="checkbox" align="right" name="status_parado" value="Parado" >Parado</input>
-                                            <input type ="checkbox" align="right" name="status_cancelado" value="Cancelado" >Cancelado</input>
-                                     
-                                
-                            </h:form>
-                 </table>
+
+        <table bgcolor="#fcf4e4" align="center">
+            
+            <tr><h4><i><center>Informações do Projeto</center></i></h4></tr><hr />
+            <h:form>
+            <center>
+                <tr> 
+
+
+
+                    <label for="nome_projeto" >Nome do projeto : </label>
+                    <h:inputText id="Inp_Nomeprojeto" value="#{projetoBean.nomeProjeto}"/>
+
+
+                    <label for="data_inicio" >Data de início : </label>
+                    <h:inputText id="Inp_Datainicio" value="#{projetoBean.dataInicio}"/>
+
+
+                    <label for="data_fim" >Data de término : </label>
+                    <h:inputText id="Inp_Datafim" value="#{projetoBean.dataTermino}"/>
+
+
+
+                    <label for="status_projeto">Indique o status do projeto : </label>
+
+                    <h:selectOneMenu value="#{projetoBean.status}">
+                        <f:selectItem itemLabel="------" />
+                        <f:selectItem itemLabel="Em execucao" itemValue="0"/>
+                        <f:selectItem itemLabel="Concluído" itemValue="1"/>
+                        <f:selectItem itemLabel="Parado"  itemValue="2"/>
+                        <f:selectItem itemLabel="Cancelado"  itemValue="3"/> 
+                    </h:selectOneMenu>
+
+                    <hr />
+
+                </tr>
+            </center>
+                <tr>
+                    <h:panelGroup layout="block" id="grupoRequisitos">
+                        <table>
+                            <tr><h4><i><center>Indique o tipo do requisito : </center></i></h4></tr> 
+                            <ui:repeat value="#{projetoBean.listaRequisitos}" var="requisito">
+                                <tr>
+                                    <center><font size="18" face="Arial"  /><i>Requisitos do Projeto</i></center>
+                                    <hr />
+
+                                    
+                                                            
+                                    
+                                                              <h:selectOneMenu value="#{requisito}">
+
+                                                                                 <f:selectItem itemLabel="------" />
+                                                                                 <f:selectItem itemLabel="Em execucao" itemValue="0"/>
+                                                                                 <f:selectItem itemLabel="Concluído" itemValue="1"/>
+                                                                                 <f:selectItem itemLabel="Parado"  itemValue="2"/>
+                                                                                 <f:selectItem itemLabel="Cancelado"  itemValue="3"/> 
+
+                                                              </h:selectOneMenu>
+                                    
+                                </tr>
+                                <tr>
+
+                                    <p>Descreva detalhadamente este requisito : </p>
+                                    <h:inputTextarea /><br/>
+                                    <hr />
+                                </tr>
+                            </ui:repeat>
+                        </table>
+                    </h:panelGroup>
+                </tr>
+                <h:commandButton value="Add requisito" id="botao_add">
+                    <f:ajax execute="@form" event="click" listener="#{projetoBean.addRequisito()}" render="grupoRequisitos"/>
+                </h:commandButton>
+
+                <h:commandButton value="Criar Projeto" id="botao_criar">
+                    <f:ajax execute="@form" event="click" listener="#{projetoBean.retornaTudo()}" render="mensagem"/>
+                </h:commandButton>
+
+                <h:outputText id="mensagem" value="#{projetoBean.mensagem}" />
+            </h:form>
+
+        </table>
+
+
+
     </h:body>
+
 </html>
 
