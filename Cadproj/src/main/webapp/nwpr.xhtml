@@ -10,10 +10,17 @@
         
         <title>Projetos</title>
     
+      
+        <link href="resources/css/style.css" rel="stylesheet" type="text/css"/>
+           
+        
+        
         
     </h:head>
     <h:body>
 
+        <div id="forma" class="forma">
+        
         <table align="center">
             
             <tr><h4><i><center>Informações do Projeto</center></i></h4></tr><hr />
@@ -22,29 +29,29 @@
                 <tr> 
                     
                     
+                           
+                    <p:outputLabel for="Inp_Nomeprojeto" class="label"/>Nome do projeto : 
+                    <p:inputText id="Inp_Nomeprojeto" value="#{projetoBean.nomeProjeto}" styleClass="input"/><br/>
 
-                    <label for="nome_projeto" />Nome do projeto : 
-                    <h:inputText id="Inp_Nomeprojeto" value="#{projetoBean.nomeProjeto}"/>
 
-
-                    <label for="data_inicio" >Data de início : </label>
-                    <p:inputMask id="Inp_Datainicio" value="#{projetoBean.dataInicio}" mask="99/99/9999"/>
-
+                    <p:outputLabel for="Inp_Datainicio" />Data de início : 
+                    <p:inputMask id="Inp_Datainicio" value="#{projetoBean.dataInicio}" mask="99/99/9999" styleClass="input"/>
+                    <br/>
                     
-                    <label for="data_fim" >Data de término : </label>
-                    <p:inputMask id="Inp_Datafim" value="#{projetoBean.dataTermino}" mask="99/99/9999"/>
-                     
+                    <p:outputLabel for="Inp_Datafim" />Data de término : 
+                    <p:inputMask id="Inp_Datafim" value="#{projetoBean.dataTermino}" mask="99/99/9999" styleClass="input"/>
+                     <br/>
 
 
-                    <label for="status_projeto">Indique o status do projeto : </label>
+                    <p:outputLabel  />Indique o status do projeto :
 
-                    <h:selectOneMenu value="#{projetoBean.status}">
-                        <f:selectItem itemLabel="------" />
+                    <p:selectOneMenu value="#{projetoBean.status}">
+                        <f:selectItem  itemLabel="------" />
                         <f:selectItem itemLabel="Em execucao" itemValue="0"/>
                         <f:selectItem itemLabel="Concluído" itemValue="1"/>
                         <f:selectItem itemLabel="Parado"  itemValue="2"/>
                         <f:selectItem itemLabel="Cancelado"  itemValue="3"/> 
-                    </h:selectOneMenu>
+                    </p:selectOneMenu>
 
                     <hr />
 
@@ -63,7 +70,7 @@
                                     
                                                             
                                     
-                                                              <h:selectOneMenu value="#{requisito}">
+                                                              <p:selectOneMenu value="#{requisito}">
 
                                                                                  <f:selectItem itemLabel="------" />
                                                                                  <f:selectItem itemLabel="Melhoria" itemValue="0"/>
@@ -71,20 +78,20 @@
                                                                                  <f:selectItem itemLabel="Bug/Defeito"  itemValue="2"/>
                                                                                  <f:selectItem itemLabel="Épico"  itemValue="3"/> 
 
-                                                              </h:selectOneMenu>
+                                                              </p:selectOneMenu>
                                     
                                 </tr>
                                 <tr>
 
                                     <p>Descreva este requisito : </p>
-                                    <h:inputTextarea /><br/>
+                                    <p:inputTextarea  label="Descreva este requisito" autoResize="true"/><br/>
                                     
                                 </tr>
                             </ui:repeat>
                         </table>
                     </h:panelGroup>
                 </tr>
-                <h:commandButton value="Add requisito" id="botao_add">
+                <h:commandButton value="Add requisito" id="botao_add" styleClass="botao_add">
                     <f:ajax execute="@form" event="click" listener="#{projetoBean.addRequisito()}" render="grupoRequisitos"/>
                 </h:commandButton>
 
@@ -98,7 +105,7 @@
         </table>
                
 
-
+        </div>  
     </h:body>
 
 </html>
