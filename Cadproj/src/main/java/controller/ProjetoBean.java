@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
+
 /**
  *
  * @author Ideiah Computer
@@ -30,6 +31,7 @@ public class ProjetoBean {
         listaRequisitos = new ArrayList<>();
     }
 
+   
     
     public void retornaTudo(){
         

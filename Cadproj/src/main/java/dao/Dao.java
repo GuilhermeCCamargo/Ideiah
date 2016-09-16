@@ -24,7 +24,7 @@ public abstract class Dao {
     private Session session = null;
 
     public Dao() {
-        session = HibernateUtil.getSessionFactory().openSession();
+        //session = HibernateUtil.getSessionFactory().openSession();
     }
 
     // <editor-fold defaultstate="collapsed" desc="INSERT and UPDATE"> 
