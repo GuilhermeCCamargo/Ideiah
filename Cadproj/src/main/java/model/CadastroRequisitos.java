@@ -16,7 +16,8 @@ public class CadastroRequisitos  implements java.io.Serializable {
      private String formato;
 
     public CadastroRequisitos() {
-    }
+        
+                                  }
 
     public CadastroRequisitos(int crId, RequisitosProjeto requisitosProjeto, String descricao, String status, String formato) {
        this.crId = crId;
@@ -27,42 +28,44 @@ public class CadastroRequisitos  implements java.io.Serializable {
     }
    
     public int getCrId() {
-        return this.crId;
-    }
+                             return this.crId;
+                           }
     
     public void setCrId(int crId) {
-        this.crId = crId;
-    }
+                                        this.crId = crId;
+                                    }
+    
     public RequisitosProjeto getRequisitosProjeto() {
-        return this.requisitosProjeto;
-    }    
+                                                         return this.requisitosProjeto;
+                                                      }
+    
     public void setRequisitosProjeto(RequisitosProjeto requisitosProjeto) {
-        this.requisitosProjeto = requisitosProjeto;
-    }
+                                                                                this.requisitosProjeto = requisitosProjeto;
+                                                                           }
+    
     public String getDescricao() {
-        return this.descricao;
-    }
+                                      return this.descricao;
+                                   }
     
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
+                                                   this.descricao = descricao;
+                                                }
+    
     public String getStatus() {
-        return this.status;
-    }
+                                   return this.status;
+                                }
     
     public void setStatus(String status) {
-        this.status = status;
-    }
+                                              this.status = status;
+                                           }
+    
     public String getFormato() {
-        return this.formato;
-    }
+                                    return this.formato;
+                                 }
     
     public void setFormato(String formato) {
         this.formato = formato;
     }
-
-
-
 
 }
 
