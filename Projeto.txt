@@ -1,0 +1,6 @@
+############################################################################
+Projeto 01 - Gerenciamento de Planos de negócios.
+ 
+A solução proposta é uma aplicação WEb que permita gerenciar o processo de incubação de um plano de negócio em uma incubadora de empresas localizada na região Sul do País. A solução proposta tem como "alvo" empreendedores que possuam empresa ou queiram incubar uma idéia. O sistema deve auxiliar o usuário a elaborar um plano de negócio e submeter o mesmo a uma pré-avaliação executada pelos gestores do Pampatec.
+Funcionários responsaveis irão auxiliar na elaboração do plano de negócio, sugerindo melhorias se necessárias, esse auxilio será constante em forma de avaliação onde o funcionário deverá acompanhar a elaboração até o momento final, que é a pré- aprovação do plano de negócio.
+Quando pré aprovado, poderá ser realizado o agendamento e avaliação do plano pela banca de avaliadores. Os Avaliadores na banca podem utilizar o sistema para analisar e submeter seu parecer referente ao plano, como propor melhorias, rejeitar ou aprovar o plano. Por fim, com plano aprovado e incubado, os gestores do pampatec poderão realizar o monitoramento do andamento da execução do plano de negócio.

@@ -1,8 +1,0 @@
-
--	Qual a ação do empreendedor observador quando o plano está em fazer melhoria.
-
-
--	Como o empreendedor observador visualiza o plano em fazer melhoria. (comentado (primeira vez), vários comentários(histórico)).
-
-
--	

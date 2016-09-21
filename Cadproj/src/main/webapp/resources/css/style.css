@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/09/2016, 11:58:41
+    Author     : Ideiah Computer
+*/
+*{
+    
+    font-weight: bold;
+
+    font-family: arial;
+  
+    font-size: 10px;
+    
+    font-style: italic;
+    
+    color: #710909;
+    
+}
+
+.input{
+    
+    display: inline-block;
+    align-content: center;
+    
+    
+    
+}
+.forma{
+    
+    font-weight: bold;
+
+    font-family: arial;
+  
+    font-size: 10px;
+    
+    font-style: italic;
+    
+    color: #710909;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #710909;
+}
+.label{
+    
+    background-color: #710909;
+    align-content: center;
+    
+    
+}
+.botao_add{
+    
+   background-color: #710909;
+    
+}

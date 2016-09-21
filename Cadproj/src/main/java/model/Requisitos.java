@@ -14,44 +14,40 @@ public class Requisitos  implements java.io.Serializable {
      private String status;
 
     public Requisitos() {
-    }
-
+        
+                          }
 	
     public Requisitos(int requisitosId, RequisitosProjeto requisitosProjeto) {
-        this.requisitosId = requisitosId;
-        this.requisitosProjeto = requisitosProjeto;
-    }
+                                                                                  this.requisitosId = requisitosId;
+                                                                                  this.requisitosProjeto = requisitosProjeto;
+                                                                               }
+    
     public Requisitos(int requisitosId, RequisitosProjeto requisitosProjeto, String status) {
-       this.requisitosId = requisitosId;
-       this.requisitosProjeto = requisitosProjeto;
-       this.status = status;
-    }
+                                                                                                this.requisitosId = requisitosId;
+                                                                                                this.requisitosProjeto = requisitosProjeto;
+                                                                                                this.status = status;
+                                                                                             }
    
     public int getRequisitosId() {
-        return this.requisitosId;
-    }
+                                     return this.requisitosId;
+                                   }
     
     public void setRequisitosId(int requisitosId) {
-        this.requisitosId = requisitosId;
-    }
+                                                       this.requisitosId = requisitosId;
+                                                    }
+    
     public RequisitosProjeto getRequisitosProjeto() {
-        return this.requisitosProjeto;
-    }
+                                                         return this.requisitosProjeto;
+                                                      }
     
     public void setRequisitosProjeto(RequisitosProjeto requisitosProjeto) {
-        this.requisitosProjeto = requisitosProjeto;
-    }
+                                                                                 this.requisitosProjeto = requisitosProjeto;
+                                                                            }
     public String getStatus() {
-        return this.status;
-    }
+                                    return this.status;
+                                }
     
     public void setStatus(String status) {
-        this.status = status;
-    }
-
-
-
-
+                                                this.status = status;
+                                           }
 }
-
-
