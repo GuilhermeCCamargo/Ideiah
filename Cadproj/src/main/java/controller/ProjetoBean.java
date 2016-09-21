@@ -25,7 +25,7 @@ public class ProjetoBean {
     private String tipo_req;
     private String status;
     private int dataInicio;
-    private int dataTermino;
+    private int dataFim;
     private ArrayList<String> listaRequisitos;
     
     public ProjetoBean(){
@@ -35,7 +35,7 @@ public class ProjetoBean {
    
     
     public void retornaTudo(){
-                                 setMensagem("A mensagem é: " + getNomeProjeto() + getDataInicio() + getDataTermino() + getRequisitos()+ getTipo_req());
+                                 setMensagem("A mensagem é: " + getNomeProjeto() + getDataInicio() + getDataFim() + getRequisitos()+ getTipo_req());
                                }
     
     public void addRequisito(){
