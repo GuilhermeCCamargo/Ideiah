@@ -1,5 +1,6 @@
 package dao;
 
+import java.util.ArrayList;
 import model.CadastroRequisitos;
 
 /**
@@ -8,19 +9,20 @@ import model.CadastroRequisitos;
  */
 public class CadastroRequisitosDao extends Dao {
 
-    public void DaoSalvar(CadastroRequisitos requisitos) {
-        salvar(requisitos);
+    public CadastroRequisitos DaoSalvar(CadastroRequisitos cadastro) {
+        return (CadastroRequisitos) salvar(cadastro);
     }
 
-    public void DaoExcluir(CadastroRequisitos requisitos) {
-        excluir(requisitos.getCrId(), CadastroRequisitos.class);
+    public void DaoExcluir(CadastroRequisitos cadastro) {
+        excluir(cadastro.getCrId(), CadastroRequisitos.class);
     }
 
-    public void DaoBuscarObjeto(CadastroRequisitos requisitos) {
-        buscarObjeto(requisitos.getCrId(), CadastroRequisitos.class);
+    public CadastroRequisitos DaoBuscarObjeto(CadastroRequisitos cadastro) {
+        return (CadastroRequisitos) buscarObjeto(cadastro.getCrId(), CadastroRequisitos.class);
     }
 
-    public void DaoBuscarObjetos() {
-        buscarObjetos(CadastroRequisitos.class);
+    public ArrayList<CadastroRequisitos> DaoBuscarObjetos() {
+        ArrayList<CadastroRequisitos> lista = (ArrayList<CadastroRequisitos>) buscarObjetos(CadastroRequisitos.class);
+        return  lista;
     }
 }

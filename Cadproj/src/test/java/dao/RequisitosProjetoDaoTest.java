@@ -50,7 +50,7 @@ public class RequisitosProjetoDaoTest {
 
         requisitos.setNomeProjeto("Projeto1");
         requisitos.setDataInicio("14/09/2016");
-        requisitos.setDataFinal("15/09/2016");
+        requisitos.setDataFim("15/09/2016");
         RequisitosProjetoDao instance = new RequisitosProjetoDao();
         requisitoSalvo = instance.DaoSalvar(requisitos);
         assertEquals("Teste salvar", instance.DaoBuscarObjeto(requisitoSalvo).getRequisitosProjetoId(), requisitoSalvo.getRequisitosProjetoId());
@@ -68,7 +68,7 @@ public class RequisitosProjetoDaoTest {
 
         requisitos.setNomeProjeto("Projeto1");
         requisitos.setDataInicio("14/09/2016");
-        requisitos.setDataFinal("15/09/2016");
+        requisitos.setDataFim("15/09/2016");
         
         RequisitosProjetoDao instance = new RequisitosProjetoDao();
         requisitoSalvo = instance.DaoSalvar(requisitos);
