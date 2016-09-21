@@ -15,7 +15,7 @@ import org.hibernate.criterion.Restrictions;
  * @author Pedro
  */
 public abstract class Dao {
-
+//Estados
     public static final int SALVOU = 0;
     public static final int ERRO_SALVAR = 1;
     public static final int ARQUIVO_GRANDE = 2;
@@ -37,7 +37,7 @@ public abstract class Dao {
     public Object salvar(Object obj) {
         Object salvo = null;
         try {
-            setTx(getSession().getTransaction());
+            setTx(getSession().getTransaction());   //getTransaction(): Returns the resource-level transaction object. The EntityTransaction instance may be used serially to begin and commit multiple transactions
             getTx().begin();
             salvo = getSession().merge(obj);
             getTx().commit();

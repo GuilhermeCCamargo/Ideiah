@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/09/2016 15:10:24 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.RequisitosProjeto" table="requisitos_projeto" catalog="db_projeto" optimistic-lock="version">
+        <id name="requisitosProjetoId" type="int">
+            <column name="Requisitos_Projeto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="nomeProjeto" type="string">
+            <column name="Nome_projeto" length="45" not-null="true" />
+        </property>
+        <property name="dataInicio" type="string">
+            <column name="Data_inicio" length="45" />
+        </property>
+        <property name="dataFinal" type="string">
+            <column name="Data_final" length="45" />
+        </property>
+        <set name="requisitoses" table="requisitos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Requisitos_Projeto_Requisitos_Projeto_id" not-null="true" />
+            </key>
+            <one-to-many class="model.Requisitos" />
+        </set>
+        <set name="cadastroRequisitoses" table="cadastro_requisitos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Requisitos_Projeto_Requisitos_Projeto_id" not-null="true" />
+            </key>
+            <one-to-many class="model.CadastroRequisitos" />
+        </set>
+    </class>
+</hibernate-mapping>

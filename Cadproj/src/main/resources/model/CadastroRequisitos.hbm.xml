@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/09/2016 15:10:24 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.CadastroRequisitos" table="cadastro_requisitos" catalog="db_projeto" optimistic-lock="version">
+        <id name="crId" type="int">
+            <column name="CR_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="requisitosProjeto" class="model.RequisitosProjeto" fetch="select">
+            <column name="Requisitos_Projeto_Requisitos_Projeto_id" not-null="true" />
+        </many-to-one>
+        <property name="descricao" type="string">
+            <column name="descricao" length="200" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="Status" length="15" not-null="true" />
+        </property>
+        <property name="formato" type="string">
+            <column name="Formato" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
