@@ -71,8 +71,11 @@ public class RequisitosProjetoDaoTest {
         requisitos.setDataFim("15/09/2016");
         
         RequisitosProjetoDao instance = new RequisitosProjetoDao();
+        requisitoSalvo = new RequisitosProjeto();
         requisitoSalvo = instance.DaoSalvar(requisitos);
-        assertNull(instance.DaoBuscarObjeto(requisitoSalvo));
+        int id = requisitoSalvo.getRequisitosProjetoId();
+        instance.DaoExcluir(requisitoSalvo);        
+        assertNull(instance.DaoBuscarObjetoPorId(id));
     }
 
     /**

@@ -36,7 +36,7 @@ public class RequisitosProjeto implements java.io.Serializable {
     }
 
     public int getRequisitosProjetoId() {
-        return this.requisitosProjetoId;
+        return requisitosProjetoId;
     }
 
     public void setRequisitosProjetoId(int requisitosProjetoId) {
@@ -44,7 +44,7 @@ public class RequisitosProjeto implements java.io.Serializable {
     }
 
     public String getNomeProjeto() {
-        return this.nomeProjeto;
+        return nomeProjeto;
     }
 
     public void setNomeProjeto(String nomeProjeto) {
@@ -52,7 +52,7 @@ public class RequisitosProjeto implements java.io.Serializable {
     }
 
     public String getDataInicio() {
-        return this.dataInicio;
+        return dataInicio;
     }
 
     public void setDataInicio(String dataInicio) {
@@ -60,7 +60,7 @@ public class RequisitosProjeto implements java.io.Serializable {
     }
 
     public String getDataFim() {
-        return this.dataFim;
+        return dataFim;
     }
 
     public void setDataFim(String dataFim) {
@@ -68,7 +68,7 @@ public class RequisitosProjeto implements java.io.Serializable {
     }
 
     public Set getRequisitoses() {
-        return this.requisitoses;
+        return requisitoses;
     }
 
     public void setRequisitoses(Set requisitoses) {
@@ -76,11 +76,13 @@ public class RequisitosProjeto implements java.io.Serializable {
     }
 
     public Set getCadastroRequisitoses() {
-        return this.cadastroRequisitoses;
+        return cadastroRequisitoses;
     }
 
     public void setCadastroRequisitoses(Set cadastroRequisitoses) {
         this.cadastroRequisitoses = cadastroRequisitoses;
     }
+
+    
 
 }

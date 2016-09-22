@@ -7,43 +7,40 @@ and open the template in the editor.
     Created on : 16/09/2016, 11:58:41
     Author     : Ideiah Computer
 */
-*{
-    
-    font-weight: bold;
 
-    font-family: arial;
-  
-    font-size: 10px;
-    
-    font-style: italic;
-    
-    color: #710909;
-    
-}
 
 .input{
     
     display: inline-block;
     align-content: center;
     
-    
-    
 }
-.forma{
+.corpo{
     
     font-weight: bold;
 
     font-family: arial;
   
-    font-size: 10px;
+    font-size: 18px;
     
     font-style: italic;
     
-    color: #710909;
+    font-style: initial;
+      
+}
+.form{
+    color: #2b81af;
     
-    width: 100%;
-    height: 100%;
-    background-color: #710909;
+     font-weight: bold;
+
+    font-family: arial;
+  
+    font-size: 18px;
+    
+    font-style: italic;
+    
+    font-style: initial;
+    
 }
 .label{
     
@@ -52,8 +49,27 @@ and open the template in the editor.
     
     
 }
-.botao_add{
+.botao{
     
-   background-color: #710909;
+        display: inline-block;
+        background-color: #ccc;
+        color: #e0f2be;
+        padding: 10px 20px;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        border: 0px;
     
+}
+.botao:hover{
+                background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+                cursor: pointer;
+}
+.botao-shadow {
+box-shadow: 1px 1px 1px #999;
+}
+ 
+.botao-rc {
+border-radius: 4px;
 }

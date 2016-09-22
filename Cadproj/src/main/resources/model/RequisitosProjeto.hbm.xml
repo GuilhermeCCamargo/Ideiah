@@ -9,13 +9,13 @@
             <generator class="identity" />
         </id>
         <property name="nomeProjeto" type="string">
-            <column name="Nome_projeto" length="45" not-null="true" />
+            <column name="nomeProjeto" length="45" not-null="true" />
         </property>
         <property name="dataInicio" type="string">
-            <column name="Data_inicio" length="45" />
+            <column name="dataInicio" length="45" />
         </property>
-        <property name="dataFinal" type="string">
-            <column name="Data_final" length="45" />
+        <property name="dataFim" type="string">
+            <column name="dataFim" length="45" />
         </property>
         <set name="requisitoses" table="requisitos" inverse="true" lazy="true" fetch="select">
             <key>

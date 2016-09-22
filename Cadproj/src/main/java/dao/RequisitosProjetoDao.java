@@ -23,6 +23,9 @@ public class RequisitosProjetoDao extends Dao{
         return (RequisitosProjeto) buscarObjeto(requisitos.getRequisitosProjetoId(), RequisitosProjeto.class);
     }
 
+    public RequisitosProjeto DaoBuscarObjetoPorId(int id) {
+        return (RequisitosProjeto) buscarObjeto(id, RequisitosProjeto.class);
+    }
     public ArrayList<RequisitosProjeto> DaoBuscarObjetos() {
         ArrayList<RequisitosProjeto> lista = (ArrayList<RequisitosProjeto>) buscarObjetos(RequisitosProjeto.class);
         return  lista;

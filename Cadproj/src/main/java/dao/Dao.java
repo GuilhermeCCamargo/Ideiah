@@ -39,7 +39,7 @@ public abstract class Dao {
         try {
             setTx(getSession().getTransaction());   //getTransaction(): Returns the resource-level transaction object. The EntityTransaction instance may be used serially to begin and commit multiple transactions
             getTx().begin();
-            salvo = getSession().merge(obj);
+            salvo = getSession().save(obj);
             getTx().commit();
         } catch (Exception e) {
             e.printStackTrace();

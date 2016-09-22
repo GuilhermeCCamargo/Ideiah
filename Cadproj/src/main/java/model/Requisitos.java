@@ -8,7 +8,7 @@ public class Requisitos implements java.io.Serializable {
 
     private int requisitosId;
     private RequisitosProjeto requisitosProjeto;
-    private String status;
+    private int status;
 
     public Requisitos() {
 
@@ -19,7 +19,7 @@ public class Requisitos implements java.io.Serializable {
         this.requisitosProjeto = requisitosProjeto;
     }
 
-    public Requisitos(int requisitosId, RequisitosProjeto requisitosProjeto, String status) {
+    public Requisitos(int requisitosId, RequisitosProjeto requisitosProjeto, int status) {
         this.requisitosId = requisitosId;
         this.requisitosProjeto = requisitosProjeto;
         this.status = status;
@@ -41,11 +41,11 @@ public class Requisitos implements java.io.Serializable {
         this.requisitosProjeto = requisitosProjeto;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return this.status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 }
