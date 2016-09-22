@@ -8,68 +8,67 @@ and open the template in the editor.
     Author     : Ideiah Computer
 */
 
-
+.logo{
+          position: relative;
+          float: left;
+          width: 15%;
+          border: thin solid;
+          padding: 5px;
+          margin: 0px 10px 10px 0;
+       }
+ .logouni{
+          position: relative;
+          float: right;
+          width: 15%;
+          border: thin solid;
+          padding: 5px;
+          margin: 0px 10px 10px 0;
+       }
+ .logopampa{
+          position: relative;
+          float: top;
+          width: 30%;
+          height: 20%;
+          border: thin solid;
+          padding: 5px;
+          margin: 0px 10px 10px 0;
+       }
 .input{
-    
-    display: inline-block;
-    align-content: center;
-    
-}
+          display: inline-block;
+          align-content: center;
+        }
 .corpo{
-    
-    font-weight: bold;
-
-    font-family: arial;
-  
-    font-size: 18px;
-    
-    font-style: italic;
-    
-    font-style: initial;
-      
-}
-.form{
-    color: #2b81af;
-    
-     font-weight: bold;
-
-    font-family: arial;
-  
-    font-size: 18px;
-    
-    font-style: italic;
-    
-    font-style: initial;
-    
-}
+          color: #2b81af;
+          font-weight: bold;
+          font-family: arial;
+          font-size: 18px;
+          font-style: italic;
+          font-style: initial;
+        }
 .label{
-    
-    background-color: #710909;
-    align-content: center;
-    
-    
-}
+          background-color: #710909;
+          align-content: center;
+       }
 .botao{
-    
-        display: inline-block;
-        background-color: #ccc;
-        color: #e0f2be;
-        padding: 10px 20px;
-        text-decoration: none;
-        box-sizing: border-box;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        border: 0px;
-    
-}
+          display: inline-block;
+          background-color: #ccc;
+          color: gold;
+          font-weight: bold;
+          padding: 10px 20px;
+          text-decoration: none;
+          box-sizing: border-box;
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          border: 0px;
+        }
 .botao:hover{
-                background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
-                cursor: pointer;
-}
+                 background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+                 cursor: pointer;
+              }
 .botao-shadow {
-box-shadow: 1px 1px 1px #999;
-}
+                  box-shadow: 1px 1px 1px #999;
+                }
  
 .botao-rc {
-border-radius: 4px;
-}
+              border-radius: 4px;
+           }

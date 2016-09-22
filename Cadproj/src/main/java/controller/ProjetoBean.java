@@ -5,12 +5,12 @@
  */
 package controller;
 
+import dao.RequisitosProjetoDao;
 import java.util.ArrayList;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
-import javax.swing.JOptionPane;
 import model.Requisitos;
-
+//teste de alteração
 /**
  *
  * @author Ideiah Computer
@@ -22,15 +22,15 @@ public class ProjetoBean {
     Requisitos teste;
     private String nomeProjeto;
     private String mensagem;
-    private String requisitos;
+    
     private String tipo_req;
     private String status;
     private int dataInicio;
     private int dataFim;
     private ArrayList<String> listaRequisitos;
-
+    RequisitosProjetoDao salvar = new RequisitosProjetoDao();
     public ProjetoBean() {
-        teste = new Requisitos();
+        
         listaRequisitos = new ArrayList<>();
     }
 
@@ -40,7 +40,7 @@ public class ProjetoBean {
     }
 
     public void addRequisito() {
-        setRequisitos(requisitos);
+                                 
     }
 
     /**
@@ -124,7 +124,7 @@ public class ProjetoBean {
      * @return the status
      */
     public String getStatus() {
-        return status;
+         return status;
     }
 
     /**
