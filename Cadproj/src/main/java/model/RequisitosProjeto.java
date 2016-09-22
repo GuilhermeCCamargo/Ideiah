@@ -48,6 +48,7 @@ public class RequisitosProjeto implements java.io.Serializable {
     }
 
     public void setNomeProjeto(String nomeProjeto) {
+        
         this.nomeProjeto = nomeProjeto;
     }
 

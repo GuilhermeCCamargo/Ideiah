@@ -8,6 +8,8 @@
             <column name="Requisitos_Projeto_id" />
             <generator class="identity" />
         </id>
+       
+        
         <property name="nomeProjeto" type="string">
             <column name="nomeProjeto" length="45" not-null="true" />
         </property>

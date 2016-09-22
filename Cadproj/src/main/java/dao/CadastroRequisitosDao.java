@@ -10,6 +10,9 @@ import model.CadastroRequisitos;
 public class CadastroRequisitosDao extends Dao {
 
     public CadastroRequisitos DaoSalvar(CadastroRequisitos cadastro) {
+        
+
+        
         return (CadastroRequisitos) salvar(cadastro);
     }
 

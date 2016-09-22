@@ -1,9 +1,7 @@
 package dao;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -39,7 +37,7 @@ public abstract class Dao {
         try {
             setTx(getSession().getTransaction());   //getTransaction(): Returns the resource-level transaction object. The EntityTransaction instance may be used serially to begin and commit multiple transactions
             getTx().begin();
-            salvo = getSession().save(obj);
+            salvo = getSession().merge(obj);
             getTx().commit();
         } catch (Exception e) {
             e.printStackTrace();

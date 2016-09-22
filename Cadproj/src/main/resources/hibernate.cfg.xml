@@ -5,8 +5,8 @@
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_projeto</property>
-    <property name="hibernate.connection.username">ideiah</property>
-    <property name="hibernate.connection.password">uniideiahpampa</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">1234</property>
     <mapping resource="model/CadastroRequisitos.hbm.xml"/>
     <mapping resource="model/Requisitos.hbm.xml"/>
     <mapping resource="model/RequisitosProjeto.hbm.xml"/>
